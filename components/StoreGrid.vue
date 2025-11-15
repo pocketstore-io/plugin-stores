@@ -1,6 +1,10 @@
 <template>
-  <section class="bg-white xl:mx-auto mx-3 px-3 py-3 max-w-6xl">
-    StoresGrid
+  <section class="bg-white px-3 py-3">
+    <section class="grid grid-cols-6 gap-3">
+      <div v-for="item in 6" class="col-span-6 md:col-span-2">
+        <StoreCard />
+      </div>
+    </section>
   </section>
 </template>
 
